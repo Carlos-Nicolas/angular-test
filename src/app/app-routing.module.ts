@@ -1,14 +1,15 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomerComponent } from './module/customer/customer.component';
 import { DashboardComponent } from './module/dashboard/dashboard.component';
+import { HelpComponent } from './module/help/help.component';
 import { MessageComponent } from './module/message/message.component';
 
 const routes: Routes = [
   {
     path:'',
     redirectTo: 'dashboard',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'dashboard',
@@ -17,7 +18,7 @@ const routes: Routes = [
   {
     path: 'customer',
     // 1º forma es la clasica pero carga todos los componentes que tiene la aplicacion
-    component: CustomerComponent
+    component: CustomerComponent,
 
     // leaseload: carga bajo demanda las  secciones solo se va a
     // cargar los componentes que usas por eso se
@@ -26,7 +27,11 @@ const routes: Routes = [
   },
   {
     path: 'message',
-    component: MessageComponent
+    component: MessageComponent,
+  },
+  {
+    path:'help',
+    component: HelpComponent,
   },
   {
     path:'**',
