@@ -9,6 +9,7 @@ import { HeaderComponent } from '../template/header/header.component';
 import { DashboardComponent } from './module/dashboard/dashboard.component';
 import { CustomerComponent } from './module/customer/customer.component';
 import { MessageComponent } from './module/message/message.component';
+import { HelpComponent } from './module/help/help.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MessageComponent } from './module/message/message.component';
     HeaderComponent,
     DashboardComponent,
     CustomerComponent,
-    MessageComponent
+    MessageComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
