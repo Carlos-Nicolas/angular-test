@@ -5,8 +5,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo: 'dashboard',
+    path: '',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -18,7 +18,7 @@ const routes: Routes = [
     component: ForgotPasswordComponent,
   },
   {
-    path:'**',
+    path: '**',
     redirectTo: 'dashboard',
 
   }

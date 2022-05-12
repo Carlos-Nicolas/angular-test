@@ -16,6 +16,10 @@ const routes: Routes = [
     component: DashboardComponent,
   },
   {
+    path:'auth',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
+  },
+  {
     path: 'customer',
     // 1º forma es la clasica pero carga todos los componentes que tiene la aplicacion
     component: CustomerComponent,
